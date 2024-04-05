@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+read -p "Enter password to unlock ~/KPXC/$1.kdbx: " -s dbpasswd
+entrypasswd=$(keepassxc-cli generate -l -U -n -s -L 32)
+printf "$dbpasswd\n$entrypasswd\n" | store-passwd "$@"
