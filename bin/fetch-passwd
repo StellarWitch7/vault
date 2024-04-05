@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+mkdir -p ~/KPXC
+keepassxc-cli show -a Password -s -q ~/KPXC/$1.kdbx "$2"
