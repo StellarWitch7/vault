@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+mkdir -p ~/KPXC
+
+username="-u $3"
+url="--url $4"
+
+if [ -z "$3" ]; then
+  username=""
+fi
+
+if [ -z "$4" ]; then
+  url=""
+fi
+
+keepassxc-cli add -p $username $url ~/KPXC/$1.kdbx "$2"
