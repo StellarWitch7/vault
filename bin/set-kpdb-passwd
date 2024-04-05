@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+mkdir -p ~/KPXC
+keepassxc-cli db-edit -p ~/KPXC/$1.kdbx
