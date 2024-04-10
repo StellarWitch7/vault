@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
+rmdir ~/Vaults/"$1".enc
 sirikali -e -b stdin -d ~/Vaults/.encrypted/"$1".enc
